@@ -2,6 +2,7 @@ import { useState } from 'react';
 import SpecialTitle from './SpecialTitle';
 import { projects } from '../constants/constants';
 import { FaChevronLeft,FaChevronRight } from "react-icons/fa6";
+import { MdLogout } from "react-icons/md";
 
 const Projects = () => {
 
@@ -30,19 +31,25 @@ const Projects = () => {
     projects[page - 1].map((project,index)=>(
 
       <div key={index} className="project rounded-[10px] overflow-hidden
-       relative shadow-main h-[620px] sm:h-[600px]">
-
-        <img className='w-full object-cover h-[250px]' src={project.image} alt="project" />
+       relative shadow-main h-[420px] sm:h-[400px]">
 
         <h3 className='text-[#9cc9e3] font-semibold text-[30px] text-center px-3 pt-3'>{project.title}</h3>
 
         <span className="block bg-[#d0bb57] w-[50px] h-[4px] mx-auto my-[30px]"></span>
-        <p className='text-[#e4e6e7] text-center leading-[28px] px-3'>{project.description}</p>
+
+        <div className="tags px-[20px] flex gap-[10px] flex-wrap">
+        {
+          project.tags.map((tag,ind)=>(
+            <span key={ind} className='block text-[14px] px-[5px] py-[10px] rounded-[4px] bg-[#802bb1]'>{tag}</span>
+          ))
+        }
+        </div>
+
 
         {
         !project.private &&
          <a className='absolute left-1/2 -translate-x-1/2 bottom-[20px] bg-blue-gradient
-        w-[120px] h-[40px] rounded-[10px] grid place-items-center' href={project.visit} target='__blank'>Live Demo</a>
+        w-[120px] h-[40px] rounded-[10px] flex items-center justify-center gap-[5px] ' href={project.visit} target='__blank'>Check <MdLogout /></a>
         }
 
         {
