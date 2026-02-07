@@ -50,6 +50,23 @@ export const projects = [
       visit: 'https://www.kaggle.com/code/mehdih008/life-expectancy-prediction-age-neural-network',
     }
   ],
+  [
+    {
+      title: 'Employee Attrition Prediction',
+      tags: ['python','pandas','Machine Learning', 'sklearn','Classification'],
+      visit: 'https://www.kaggle.com/code/mehdih008/employee-attrition-prediction',
+    },
+    {
+      title: 'California Mall Customer Clustering',
+      tags: ['python','pandas','Machine Learning', 'sklearn','Clustering'],
+      visit: 'https://www.kaggle.com/code/mehdih008/california-mall-customer-clustering-classification',
+    },
+    {
+      title: 'House Price Prediction with DL',
+      tags: ['python','pandas', 'Tensorflow','Neural Network','Regression'],
+      visit: 'https://colab.research.google.com/drive/14lArD3w-vMhC8f_Nm6VpsgNA1ix2O--I?usp=sharing',
+    }
+  ]
 
 ];
 
