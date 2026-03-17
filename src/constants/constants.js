@@ -66,6 +66,13 @@ export const projects = [
       tags: ['python','pandas', 'Tensorflow','Neural Network','Regression'],
       visit: 'https://colab.research.google.com/drive/14lArD3w-vMhC8f_Nm6VpsgNA1ix2O--I?usp=sharing',
     }
+  ],
+  [
+    {
+      title: 'Volume Control Using Computer Vision',
+      tags: ['python','pandas','Computer Vision', 'numpy','open-cv','mediapipe'],
+      visit: 'https://github.com/mehdihou10/volume-controle-using-computer-vision',
+    },
   ]
 
 ];
