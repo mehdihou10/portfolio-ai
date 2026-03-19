@@ -73,6 +73,11 @@ export const projects = [
       tags: ['python','pandas','Computer Vision', 'numpy','open-cv','mediapipe'],
       visit: 'https://github.com/mehdihou10/volume-controle-using-computer-vision',
     },
+    {
+      title: 'Pose Estimation (Dips Exercice Counting)',
+      tags: ['python','pandas','Computer Vision', 'numpy','open-cv','mediapipe'],
+      visit: 'https://github.com/mehdihou10/pose-estimation-computer-vision',
+    },
   ]
 
 ];
